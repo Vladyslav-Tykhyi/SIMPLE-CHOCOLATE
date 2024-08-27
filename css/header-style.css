@@ -1,0 +1,259 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #fafafa;
+}
+
+@media (max-width: 757px) {
+  .header {
+    padding: 20px 0 14px 0;
+  }
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1168px;
+    padding: 0 16px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1158px) {
+  .logo {
+    font-size: 18px;
+    line-height: 111%;
+  }
+}
+
+.logo-icon {
+  stroke-width: 2px;
+  stroke: #fd9222;
+  fill: #fafafa;
+  margin-left: 4px;
+}
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .nav-list {
+    margin-left: 101px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .nav-list {
+    margin-left: 447px;
+  }
+}
+.nav-list-item {
+}
+.nav-list-transfer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #111;
+  display: block;
+  padding: 32px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.nav-list-transfer:hover {
+  color: #fd9222;
+  text-decoration: underline;
+}
+
+.nav-social-list {
+  display: flex;
+  gap: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav-social-list {
+    display: none;
+  }
+}
+
+.nav-social-item {
+}
+.social-inst-link {
+}
+.nav-social-icon {
+  stroke-width: 10px;
+  stroke: #111;
+  fill: #fafafa;
+}
+
+.nav-social-icon:hover,
+.nav-social-icon:focus {
+  fill: #fafafa;
+  stroke: #fd9222;
+}
+
+.social-twitter-link {
+}
+.burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: transparent;
+}
+
+@media (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
+.icon-burger {
+  stroke-width: 2px;
+  stroke: #111;
+  fill: #fafafa;
+}
+
+/* burger-menu */
+
+.burger-menu {
+  background-color: #1e1823;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 250ms ease-in-out;
+  z-index: 1000;
+}
+
+.burger-container {
+  padding: 136px 36px 20px 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.burger-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+.burger-closing-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border: 50%;
+  background-color: transparent;
+  border: transparent;
+}
+
+.burger-closign-icon {
+  stroke-width: 2px;
+  fill: #fff;
+}
+.burger-nav {
+}
+.burger-list {
+}
+.burger-list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.burger-item-link {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.burger-item-link:hover {
+  color: #fd9222;
+}
+
+.burger-item-link:focus {
+  text-decoration: underline;
+}
+
+.general-color-orange {
+  color: #fd9222;
+}
+
+.burger-social-block {
+  margin-top: auto;
+}
+
+.burger-social-list {
+  display: flex;
+  gap: 18px;
+}
+
+.burger-social-icon {
+  stroke-width: 2px;
+  fill: #111;
+  stroke: #fff;
+}
+
+.burger-social-icon:hover,
+.burger-social-icon:focus {
+  fill: #fd9222;
+  stroke: #fafafa;
+}

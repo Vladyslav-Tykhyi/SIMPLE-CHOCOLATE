@@ -1,0 +1,227 @@
+.hero {
+  background-color: #1e1823;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/hero/mb-hero.jpg);
+  border-radius: 30px;
+  max-width: 1200px;
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 60px auto 0;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero/mb-hero@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 80px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero/tab-hero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0.4) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/hero/tab-hero@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero/lap-hero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0.4) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/hero/lap-hero@2x.jpg);
+    }
+  }
+}
+
+.hero-container {
+  padding-top: 395px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding: 671px 72px 40px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-container {
+    padding-top: 371px;
+  }
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 32px;
+  max-width: 285px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+    line-height: 121%;
+    max-width: 484px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-block-transfer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero-block-link {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero-block-link {
+    margin-bottom: 0;
+  }
+}
+
+.block-link-buy {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  max-width: 120px;
+  background-color: #fd9222;
+  padding: 12px 28px;
+  border-radius: 100px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .block-link-buy {
+    padding: 14px 40px;
+    max-width: 144px;
+    height: 45px;
+  }
+}
+
+.block-link-buy:hover,
+.block-link-buy:focus {
+  background-color: #fff;
+  color: #fd9222;
+}
+.block-link-cook {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  max-width: 159px;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1158px) {
+  .block-link-cook {
+    padding: 14px 40px;
+    max-width: 183px;
+    height: 45px;
+  }
+}
+
+.block-link-cook:hover,
+.block-link-cook:focus {
+  background-color: #fd9222;
+}
+.scroll-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-block {
+    gap: 14px;
+  }
+}
+
+.scroll-block-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-block-text {
+    font-size: 14px;
+    line-height: 129%;
+  }
+}
+
+.scroll-down-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .scroll-down-link {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.scroll-down-link:hover {
+  transform: rotate(-360deg);
+}
+.scroll-sign {
+  fill: #fd9222;
+}

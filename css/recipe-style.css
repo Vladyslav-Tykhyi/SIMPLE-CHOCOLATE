@@ -1,0 +1,119 @@
+.recipe {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .recipe {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .recipe {
+    margin-top: 100px;
+  }
+}
+.recipe-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .recipe-title {
+    font-size: 24px;
+    line-height: 117%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .recipe-container {
+    padding: 0 77px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .recipe-container {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-bg {
+    margin-bottom: 20px;
+  }
+}
+.block-bg {
+  flex-shrink: 0;
+}
+
+.block-recipe {
+  padding: 20px 14px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .block-recipe {
+    padding: 32px 65px 32px 32px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .block-recipe {
+    padding: 32px 55px 32px 32px;
+  }
+}
+
+.block-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: #111;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .block-title {
+    max-width: 338px;
+    margin-bottom: 28px;
+  }
+}
+
+.block-recipe-item {
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #111;
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (min-width: 1158px) {
+  .block-recipe-item {
+    margin: 0;
+  }
+}
+.block-recipe-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 1158px) {
+  .block-recipe-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.block-recipe-item::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  margin-right: 8px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
